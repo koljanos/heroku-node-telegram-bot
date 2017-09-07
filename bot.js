@@ -26,4 +26,4 @@ module.exports = bot;
 
 app.post('/', function (req, res) {
   res.send('Got a POST request')
-})
+});
