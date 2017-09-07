@@ -1,6 +1,4 @@
 var token = process.env.TOKEN;
-var express = require('express');
-var app = express();
 
 var Bot = require('node-telegram-bot-api');
 var bot;
@@ -24,6 +22,3 @@ bot.onText(/^/, function (msg) {
 
 module.exports = bot;
 
-app.post('/', function (req, res) {
-  console.log('Got a POST request');
-});
