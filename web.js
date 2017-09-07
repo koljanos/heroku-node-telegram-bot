@@ -21,3 +21,8 @@ module.exports = function (bot) {
     res.sendStatus(200);
   });
 };
+
+app.post('/bubu', function(req, res) {
+    var idd = req.body.name,
+    console.log('GOT POST %s:%s', idd);
+});
