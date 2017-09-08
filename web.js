@@ -23,8 +23,7 @@ module.exports = function (bot) {
   });
 };
 
-app.post('/bubu', function(req, res) {
-    var idd = req.body.name;
+app.post('/bubu', jsonParser, function(req, res) {
     console.log('GOT POST %s', req.body);
     res.sendStatus(200);
 });
